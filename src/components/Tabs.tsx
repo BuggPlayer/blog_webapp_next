@@ -27,18 +27,19 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
 
   return (
     <div
-      className=" bg--100 flex items-center
+      className="flex  lg:flex-row md:flex-row  items-center  min-[320px]:flex-col
      justify-between border-b-2 border-gray-100"
     >
-      <ul className="flex items-center">
+      <ul className=" lg:flex md:flex items-center min-[320px]:hidden ">
         <li
           className={
-            "mr-6 pb-3 border-b-4 rounded-sm " +
-            `${
-              router.pathname === "/"
-                ? "border-green-500 text-primary"
-                : "border-red-400 text-gray-400"
-            }`
+            "mr-6 pb-2 border-b-4 rounded-sm border-red-400 text-gray-400 "
+            // +
+            // `${
+            //   router.pathname === "/"
+            //     ? "border-green-500 text-primary"
+            //     : "border-red-400 text-gray-400"
+            // }`
           }
         >
           <Link href="/">Recent</Link>
@@ -49,7 +50,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
             <li
               key={index}
               className={
-                "mr-6 pb-4 border-b-4 rounded-sm " +
+                "mr-6 pb-2 border-b-4 rounded-sm " +
                 `${
                   isActiveLink(category)
                     ? "border-primary text-primary"
@@ -68,8 +69,6 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
           );
         })}
       </ul>
-
-
 
       <div className="flex p-2 rounded-md  items-center border">
         <svg

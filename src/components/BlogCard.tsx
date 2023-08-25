@@ -27,7 +27,7 @@ const BlogCard = ({ article }: any) => {
           </svg>
         </div>
         <span className=" text-sm font-bold 0 text-gray-600">
-          {article.firstname} {article.lastname} on &nbsp;
+          {article.firstname} {article.lastname} on;
           <span className="text-gray-400">
             {formatDate("2023-03-30T10:59:41.871Z")}
           </span>
@@ -35,7 +35,7 @@ const BlogCard = ({ article }: any) => {
       </div>
       <div className="flex lg:flex-row md:flex-row   min-[320px]:flex-col">
         <div>
-          <Link href="#">
+          <Link href="http://localhost:3000/blogs/1">
             <h1 className=" my-2 text-2xl text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
               {/* {article.attributes.Title} */}
               {article.title}
@@ -44,7 +44,7 @@ const BlogCard = ({ article }: any) => {
 
           <div className="text-gray-500  flex ">
             <p className=" md:mr-10 min-[320px]:mr-1">
-              {article?.description?.slice(0, 350)}{" "}
+              {article?.description?.slice(0, 350)}
               {article.description?.length > 350 ? "..." : ""}
             </p>
 
