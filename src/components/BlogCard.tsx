@@ -35,7 +35,7 @@ const BlogCard = ({ article }: any) => {
       </div>
       <div className="flex lg:flex-row md:flex-row   min-[320px]:flex-col">
         <div>
-          <Link href="http://localhost:3000/blogs/1">
+          <Link href="https://blog-webapp-next-yfsx.vercel.app/blogs/1">
             <h1 className=" my-2 text-2xl text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
               {/* {article.attributes.Title} */}
               {article.title}
