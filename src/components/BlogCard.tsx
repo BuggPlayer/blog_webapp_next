@@ -10,30 +10,14 @@ import React from "react";
 
 const BlogCard = ({ article }: any) => {
   return (
-    <div className="border-t-2  md:p-5 md:mx-6  sm:mx-2  min-[320px]:p-1  min-[320px]:mx-1 ">
-      <div className="flex items-center my-1">
-        <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-10 h-10"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <span className=" text-sm font-bold 0 text-gray-600">
-          BuggPlayer on 
-          <span className="text-gray-400 ml-2">
-            {formatDate("2023-03-30T10:59:41.871Z")}
-          </span>
+    <div className="border-t-2   md:py-4 md:mx-4 sm:mx-2  min-[320px]:p-1  min-[320px]:mx-1 ">
+      <span className="  text-sm font-bold flex text-gray-600">
+        BuggPlayer on
+        <span className="text-gray-400 ml-2">
+          {formatDate("2023-03-30T10:59:41.871Z")}
         </span>
-      </div>
-      <div className="flex lg:flex-row md:flex-row   min-[320px]:flex-col">
+      </span>
+      <div className="flex mt-3 lg:flex-row md:flex-row     min-[320px]:flex-col">
         <div>
           <Link href="https://blog-webapp-next-yfsx.vercel.app/blogs/1">
             <h1 className=" text-2xl text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
@@ -43,7 +27,7 @@ const BlogCard = ({ article }: any) => {
           </Link>
 
           <div className="text-gray-500  flex  break-all">
-            <p className=" md:mr-10 min-[320px]:mr-1">
+            <p className="my-2 md:mr-10 min-[320px]:mr-1">
               {article?.description?.slice(0, 250)}
               {article.description?.length > 250 ? "..." : ""}
             </p>
@@ -55,12 +39,26 @@ const BlogCard = ({ article }: any) => {
         <Image
           src="/img1.jpg"
           alt=""
-          width={250}
-          height={200}
-          className="min-[320px]:my-2 md:w-screen"
+          width={150}
+          height={150}
+          className="min-[320px]:my-2 md:w-72"
         />
       </div>
-
+      <div className=" flex gap-3">
+        <p className="border bg-gray-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          React
+        </p>
+        <p className="border bg-gray-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          Node
+        </p>{" "}
+        <p className="border bg-gray-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          Javascript
+        </p>{" "}
+        <p className="border  bg-gray-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          Express
+        </p>
+      </div>
+     
       {/**/}
     </div>
   );
