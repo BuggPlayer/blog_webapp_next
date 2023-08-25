@@ -51,7 +51,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="">
+    <main className="  dark:text-black     ">
       <Navbar />
       <div className=" p-6 pb-32  mx-auto font-sans ">
         <Head>
