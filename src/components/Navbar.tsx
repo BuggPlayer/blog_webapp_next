@@ -27,7 +27,7 @@ const Navbar = () => {
         </li>
       </ul> */}
 
-      <ul className="flex mx-10 items-center">
+      <ul className="flex  md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
         <li className="mr-6 font-medium text-gray-600">
           <a href="#" className="hover:text-gray-400">
             <svg

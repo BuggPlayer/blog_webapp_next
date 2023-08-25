@@ -10,14 +10,14 @@ import React from "react";
 
 const BlogCard = ({ article }: any) => {
   return (
-    <div className="  border-t-2      md:p-5 md:mx-6       min-[320px]:p-1  min-[320px]:mx-1 ">
-      <div className="flex items-center my-2    ">
+    <div className="border-t-2  md:p-5 md:mx-6  sm:mx-2  min-[320px]:p-1  min-[320px]:mx-1 ">
+      <div className="flex items-center my-1">
         <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="w-8 h-8"
+            className="w-10 h-10"
           >
             <path
               fill-rule="evenodd"
@@ -27,8 +27,8 @@ const BlogCard = ({ article }: any) => {
           </svg>
         </div>
         <span className=" text-sm font-bold 0 text-gray-600">
-          {article.firstname} {article.lastname} on;
-          <span className="text-gray-400">
+          BuggPlayer on 
+          <span className="text-gray-400 ml-2">
             {formatDate("2023-03-30T10:59:41.871Z")}
           </span>
         </span>
@@ -36,23 +36,29 @@ const BlogCard = ({ article }: any) => {
       <div className="flex lg:flex-row md:flex-row   min-[320px]:flex-col">
         <div>
           <Link href="https://blog-webapp-next-yfsx.vercel.app/blogs/1">
-            <h1 className=" my-2 text-2xl text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
+            <h1 className=" text-2xl text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
               {/* {article.attributes.Title} */}
               {article.title}
             </h1>
           </Link>
 
-          <div className="text-gray-500  flex ">
+          <div className="text-gray-500  flex  break-all">
             <p className=" md:mr-10 min-[320px]:mr-1">
-              {article?.description?.slice(0, 350)}
-              {article.description?.length > 350 ? "..." : ""}
+              {article?.description?.slice(0, 250)}
+              {article.description?.length > 250 ? "..." : ""}
             </p>
 
             {/* {article.description.length > 250 ? "..." : ""} */}
           </div>
         </div>
 
-        <Image src="/img1.jpg" alt="" width={250} height={200} className="min-[320px]:my-2" />
+        <Image
+          src="/img1.jpg"
+          alt=""
+          width={250}
+          height={200}
+          className="min-[320px]:my-2 md:w-screen"
+        />
       </div>
 
       {/**/}

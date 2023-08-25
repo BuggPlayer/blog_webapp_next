@@ -28,7 +28,7 @@ const ArticleList = ({ articles }: any) => {
           );
         })}
       </div>
-      <div className="border-t-2 border-l-2  px-4 lg:w-[30%] py-2">
+      <div className="border-t-2 border-l-2  px-4 lg:w-[30%] py-2 ">
         <BlogCardWithImage />
       </div>
     </div>

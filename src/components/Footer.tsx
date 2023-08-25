@@ -4,16 +4,15 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="text-gray-600 mt-12 fixed bottom-0 left-0 bg-white w-full border-2">
-
       <div className="p-4 mx-auto flex items-center flex-col sm:flex-row ">
         <a
           href="/"
-          className="flex items-center justify-center md:justify-start text-gray-900"
+          className=" lg:flex md:flex min-[320px]:hidden items-center justify-center md:justify-start text-gray-900"
         >
-          <Image src={"/img1.jpg"} alt="tttt" height={35} width={40} />
+          {/* <Image src={"/img1.jpg"} alt="tttt" height={35} width={40} /> */}
           <span className="ml-3 text-md">tech Blog</span>
         </a>
-        <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <p className=" lg:inline-block md:inline-block min-[320px]:hidden text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 ">
           © 2022 tech blog —
           <a
             // href="https://twitter.com/techsgyan"
@@ -24,7 +23,8 @@ const Footer = () => {
             @tech sGyan
           </a>
         </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <span className="inline-flex sm:ml-auto sm:mt-0  mt-2 justify-center sm:justify-start">
+          
           <a className="text-gray-500">
             <svg
               fill="currentColor"
