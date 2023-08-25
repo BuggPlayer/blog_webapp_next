@@ -42,17 +42,10 @@
     @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-primary;
   }
 
-
-
-
-
-
-
-
-
-
-
-  
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 body {
@@ -134,13 +127,13 @@ body {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
+/* .grid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-}
+} */
 
 .card {
   margin: 1rem;
@@ -176,10 +169,10 @@ body {
   height: 1em;
   margin-left: 0.5rem;
 }
-
+/* 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
-}
+} */
