@@ -1,18 +1,8 @@
-// import { AxiosResponse } from "axios";
 import React from "react";
-// import qs from "qs";
-import Image from "next/image";
-// import { formatDate, serializeMarkdown } from '../../utils';
-// import { fetchArticleBySlug } from '../../http';
-// import { IArticle, ICollectionResponse } from '../../types';
-import { GetServerSideProps } from "next";
-import Head from "next/head";
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 
-// interface IPropType {
-//   article: IArticle;
-//   notFound?: boolean;
-// }
+import Image from "next/image";
+
+import Head from "next/head";
 
 const page = () => {
   return (
@@ -83,7 +73,6 @@ const page = () => {
               also the leap into electronic typesetting, remaining essentially
               unchanged. It was popularised in the 1960s with the release of
               Letraset sheets containing Lorem Ipsum passages, and more recently
-            
               What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the
               industrys standard dummy text ever since the 1500s, when an
@@ -92,7 +81,6 @@ const page = () => {
               also the leap into electronic typesetting, remaining essentially
               unchanged. It was popularised in the 1960s with the release of
               Letraset sheets containing Lorem Ipsum passages, and more recently
-            
               What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the
               industrys standard dummy text ever since the 1500s, when an
@@ -101,7 +89,6 @@ const page = () => {
               also the leap into electronic typesetting, remaining essentially
               unchanged. It was popularised in the 1960s with the release of
               Letraset sheets containing Lorem Ipsum passages, and more recently
-            
               What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the
               industrys standard dummy text ever since the 1500s, when an
@@ -110,10 +97,7 @@ const page = () => {
               also the leap into electronic typesetting, remaining essentially
               unchanged. It was popularised in the 1960s with the release of
               Letraset sheets containing Lorem Ipsum passages, and more recently
-            
-            
               Lorem Ipsum is that it has a more-or-less normal distribution of
-            
             </p>
           </div>
         </div>

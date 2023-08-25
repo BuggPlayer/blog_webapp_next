@@ -33,13 +33,13 @@ export const debounce = (fn: (query: string) => void, timeout = 300) => {
   return debounced;
 };
 
-export const serializeMarkdown = async (item: IArticle) => {
-  const body = await serialize(item.attributes.body as string);
-  return {
-    ...item,
-    attributes: {
-      ...item.attributes,
-      body,
-    },
-  };
-};
+// export const serializeMarkdown = async (item: any) => {
+//   const body = await serialize(item.attributes.body as string);
+//   return {
+//     ...item,
+//     attributes: {
+//       ...item.attributes,
+//       body,
+//     },
+//   };
+// };
