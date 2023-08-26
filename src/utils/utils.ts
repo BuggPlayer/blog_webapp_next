@@ -43,3 +43,10 @@ export const debounce = (fn: (query: string) => void, timeout = 300) => {
 //     },
 //   };
 // };
+
+
+
+
+// const res = await fetch('http://localhost:5000/api/blog/getBlogs')
+// const data = await res.json()
+// console.log(data);

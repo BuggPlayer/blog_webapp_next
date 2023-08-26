@@ -2,8 +2,9 @@ import Head from "next/head";
 import ArticleList from "@/components/ArticleList";
 import Tabs from "@/components/Tabs";
 import Navbar from "@/components/Navbar";
-
-export default function Home() {
+import { fetchArticles } from "@/htttp";
+import axios from "axios";
+const Home = ({ categories, articles }: any) => {
   const staticArticle = [
     {
       id: 1,
@@ -62,15 +63,10 @@ export default function Home() {
 
         <Tabs />
         <h1 className="  my-5 text-2xl ">Recent Articles</h1>
-        <ArticleList articles={staticArticle} />
+        <ArticleList />
       </div>
     </main>
   );
-}
+};
 
-// export async function getServerSideProps() {
-//   const res = await fetch(`https://...`);
-//   const projects = await res.json();
-
-//   return { props: { projects } };
-// }
+export default Home;

@@ -9,8 +9,10 @@ import React from "react";
 
 const BlogCardWithImg = ({ article }: any) => {
   return (
-    <div className=" bg-gray-100   rounded-md flex h-60
-     items-center md:justify-center px-4 ">
+    <div
+      className=" bg-gray-100   rounded-md flex h-60
+     items-center md:justify-center px-4 "
+    >
       <div className="p-3">
         <p className="text-xl  text-black font-bold cursor-pointer">
           Get unlimeted access to tech blog everthing here!
