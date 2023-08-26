@@ -60,10 +60,17 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        {/* <Tabs /> */}
+        <Tabs />
         <h1 className="  my-5 text-2xl ">Recent Articles</h1>
         <ArticleList articles={staticArticle} />
       </div>
     </main>
   );
 }
+
+// export async function getServerSideProps() {
+//   const res = await fetch(`https://...`);
+//   const projects = await res.json();
+
+//   return { props: { projects } };
+// }
