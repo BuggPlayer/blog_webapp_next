@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-4 p-2 h-20">
+    <nav className="flex shadow-md  items-center justify-between px-4 p-2 h-20">
       <Link href="/">
         <div className="flex items-center rounded-md cursor-pointer">
           <Image src="/img1.jpg" alt="no img" height={35} width={40} />

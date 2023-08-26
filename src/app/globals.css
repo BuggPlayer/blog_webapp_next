@@ -18,7 +18,11 @@
   }
 }
 
-@layer components {
+* {
+  padding: 0px;
+  margin: 0px;
+}
+/* @layer components {
   .disabled {
     @apply opacity-50 cursor-not-allowed;
   }
@@ -40,13 +44,10 @@
 
   .single-article blockquote {
     @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-primary;
-  }
+  } */
 
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
-}
+ 
+/* } */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -59,7 +60,7 @@ body {
 }
 
 /* /// for nowtemporary */
-
+/* 
 .container {
   padding: 0 2rem;
 }
@@ -125,7 +126,7 @@ body {
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
+} */
 
 /* .grid {
   display: flex;
@@ -135,7 +136,7 @@ body {
   max-width: 800px;
 } */
 
-.card {
+/* .card {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -168,7 +169,7 @@ body {
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
+} */
 /* 
 @media (max-width: 600px) {
   .grid {

@@ -7,7 +7,21 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "567px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 1024px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
+      screens: {
+        xs: { min: "320px", max: "567px" },
+        // => @media (min-width: 640px) { ... }
+      },
       colors: {
         primary: "#53BD95",
         "primary-dark": "#2c785c",

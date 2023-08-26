@@ -14,26 +14,23 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
     { name: "Nextjs " },
     { name: "Ractjs " },
     { name: "HTML " },
-    { name: "NODE " },
-    { name: "Express " },
-    { name: "CSS " },
+    // { name: "NODE " },
+    // { name: "Express " },
+    // { name: "CSS " },
   ];
   const router = useRouter();
 
   const isActiveLink = (category: any) => {
-    return true;
+    return false;
     // return category.attributes.Slug === router.query.category;
   };
 
   return (
-    <div
-      className="flex  lg:flex-row md:flex-row  items-center  min-[320px]:flex-col
-     justify-between border-b-2 border-gray-100"
-    >
-      <ul className=" lg:flex md:flex items-center min-[320px]:hidden ">
+    <div className="my-6 flex items-center justify-between lg:flex-row md:flex-row  sm:flex-col xs:flex-col  border-b-2 border-gray-100">
+      <ul className=" flex items-center">
         <li
           className={
-            "mr-6 pb-2 border-b-4 rounded-sm border-red-400 text-gray-400 "
+            "mr-6 pb-3 border-b-4 rounded-sm border-red-400 text-gray-400 "
             // +
             // `${
             //   router.pathname === "/"
@@ -50,7 +47,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
             <li
               key={index}
               className={
-                "mr-6 pb-2 border-b-4 rounded-sm " +
+                "mr-6 pb-3 border-b-4 rounded-sm " +
                 `${
                   isActiveLink(category)
                     ? "border-primary text-primary"
@@ -70,7 +67,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
         })}
       </ul>
 
-      <div className="flex p-2 rounded-md  items-center border">
+      <div className="flex rounded-sm bg-gray-200 px-2 sm:my-5 xs:my-5 md:w-[40%] lg:w-[40%] sm:w-[80%] xs:w-[90%]  items-center">
         <svg
           className="h-4 fill-gray-500"
           xmlns="http://www.w3.org/2000/svg"
@@ -80,10 +77,9 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
         </svg>
         <input
           // onChange={(e) => handleOnSearch(e.target.value)}
-          onChange={(e) => {}}
           type="text"
           placeholder="Search"
-          className="outline-none px-2 py-1 ml-1"
+          className="outline-none sm:p-3 xs:p-3 bg-gray-200 px-2 py-1 ml-1 "
         />
       </div>
     </div>
