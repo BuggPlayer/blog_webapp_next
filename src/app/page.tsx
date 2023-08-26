@@ -2,8 +2,7 @@ import Head from "next/head";
 import ArticleList from "@/components/ArticleList";
 import Tabs from "@/components/Tabs";
 import Navbar from "@/components/Navbar";
-import { fetchArticles } from "@/htttp";
-import axios from "axios";
+
 const Home = ({ categories, articles }: any) => {
   const staticArticle = [
     {
