@@ -15,12 +15,12 @@ import { data } from "@/utils/data/data";
   flex-wrap: wrap;
   max-width: 800px;
 } */
-const getBlogsData = async () => {
-  const res = await fetch("http://localhost:5000/api/blog/getBlogs");
-  return await res.json();
-};
+// const getBlogsData = async () => {
+//   const res = await fetch("http://localhost:5000/api/blog/getBlogs");
+//   return await res.json();
+// };
 const ArticleList = async () => {
-  const { data: articleData } = await getBlogsData();
+  // const { data: articleData } = await getBlogsData();
 
   // console.log(articleData);
   // grid border-4  grid-gap gap-16 mt-16

@@ -18,7 +18,7 @@ const BlogCard = async ({ article }: any) => {
      "
     >
       <div className=" lg:w-[80%] md:w-[80%] mr-5 ">
-        <Link href="/blogs/1">
+        <Link href="/">
           <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
             {article.title}
           </h1>
