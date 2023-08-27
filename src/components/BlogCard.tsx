@@ -12,12 +12,12 @@ import React from "react";
 const BlogCard = async ({ article }: any) => {
   return (
     <div
-      className="flex  justify-between lg:flex-row md:flex-row sm:flex-row xs:flex-col-reverse    border-t-2
+      className="flex my-5 rounded-md  bg-gray-100  shadow-lg justify-between lg:flex-row md:flex-row sm:flex-row xs:flex-col-reverse   
       overflow-hidden md:p-3
-       sm:p-2 xs:p-2
+       sm:p-2 xs:mx-3
      "
     >
-      <div className=" lg:w-[80%] md:w-[80%] mr-5 ">
+      <div className=" lg:w-[80%] md:w-[80%] sm:w-[90%] xs:w-[100%] mr-5  my-2 ">
         <Link href="https://blog-webapp-next-wv8x.vercel.app/blogs/1">
           <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
             {article.title}
@@ -42,13 +42,13 @@ const BlogCard = async ({ article }: any) => {
             </span>
           </span>
         </div>
-        <div
+        {/* <div
           className="text-gray-500 w-[70%]   sm:w-[90%] xs:w-[95%] break-all"
           // dangerouslySetInnerHTML={{ __html: article?.content?.slice(0, 250) }}
         >
           {article?.content?.slice(0, 250)}{" "}
           {article?.content?.length > 250 ? "..." : ""}
-        </div>
+        </div> */}
 
         <div className=" flex gap-3 my-4">
           <p className="border bg-gray-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
@@ -72,7 +72,7 @@ const BlogCard = async ({ article }: any) => {
         width={150}
         height={150}
         className="
-      lg:w-80 md:w-56 sm:w-full xs:w-full my-2 overflow-hidden
+      lg:w-80 md:w-56 h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
         "
       />
     </div>

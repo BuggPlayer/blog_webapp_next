@@ -11,7 +11,7 @@ const Navbar = () => {
           <span className="font-bold ml-2 ">Tech Blog</span>
         </div>
       </Link>
-      <div className="  visible min-[320px]:hidden  ">Happy reading</div>
+      {/* <div className="  visible min-[320px]:hidden  ">Happy reading</div> */}
       {/* <ul className=" hidden flex items-center">
         <li className="mr-6 font-medium text-gray-600">
           <a href="#">Products</a>

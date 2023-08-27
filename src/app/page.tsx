@@ -9,7 +9,7 @@ const Home = ({ categories, articles }: any) => {
       id: 1,
       first_name: "Jeanette",
       last_name: "Penddreth",
-      title: "What's a Blog & Why You Need One",
+      title: "Choosing the Ideal Tech Stack for Your Project: A Comprehensive Guide",
       description:
         "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       email: "jpenddreth0@census.gov",
@@ -21,7 +21,7 @@ const Home = ({ categories, articles }: any) => {
       first_name: "Giavani",
       last_name: "Frediani",
       email: "gfrediani1@senate.gov",
-      title: "What's a Blog & Why You Need One",
+      title: "CI/CD Pipeline: Automating Software Delivery",
       gender: "Male",
       ip_address: "229.179.4.212",
       description:
@@ -31,7 +31,7 @@ const Home = ({ categories, articles }: any) => {
       id: 1,
       first_name: "Jeanette",
       last_name: "Penddreth",
-      title: "What's a Blog & Why You Need One",
+      title: "Choosing the Ideal Tech Stack for Your Project: A Comprehensive Guide",
       description:
         "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       email: "jpenddreth0@census.gov",
@@ -42,7 +42,7 @@ const Home = ({ categories, articles }: any) => {
       id: 1,
       first_name: "Jeanette",
       last_name: "Penddreth",
-      title: "What's a Blog & Why You Need One",
+      title: "Mastering Effective Code Reviews: Best Practices",
       description:
         "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       email: "jpenddreth0@census.gov",
