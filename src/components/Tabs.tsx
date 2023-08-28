@@ -26,11 +26,11 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
   };
 
   return (
-    <div className="my-6 flex items-center justify-between lg:flex-row md:flex-row  sm:flex-col xs:flex-col  border-b-2 border-gray-100">
-      <ul className=" flex items-center">
+    <div className="my-6 flex items-center font-displayHead justify-between lg:flex-row md:flex-row  sm:flex-col xs:flex-col  border-b-2 border-gray-100">
+      <ul className=" flex items-center"> 
         <li
           className={
-            "mr-6 pb-3 border-b-4 rounded-sm border-red-400 text-gray-400 "
+            "mr-6 pb-3 border-b-4 rounded-sm border-accentColor text-accentColor "
             // +
             // `${
             //   router.pathname === "/"
@@ -51,7 +51,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
                 `${
                   isActiveLink(category)
                     ? "border-primary text-primary"
-                    : "border-white text-gray-400"
+                    : "border-gray-400 text-gray-400"
                 }`
               }
             >

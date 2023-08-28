@@ -1,8 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
-
-
 // Color Code:
 // #20727F
 // #0E353F
@@ -21,10 +18,36 @@ Highlight Color: Green (#2ECC40) -->pply the highlight color to secondary elemen
 
 
 color combination 2
-Primary Color: Slate Blue (#6A5ACD) 
-Secondary Color: Light Gray (#EAEAEA)
-Accent Color: Orange (#FFA500)
-Highlight Color: Teal (#008080)
+Primary_Color: Slate Blue (#6A5ACD) mainly important section -nav footer email  
+Secondary_Color: Light Gray (#EAEAEA) // background color or text body
+Accent_Color: Orange (#FFA500) // heading / sub heading  / buttons /
+Highlight_Color: Teal (#008080)
+
+# meduim 
+Background: White or a very light gray (#FFFFFF or #F5F5F5)
+Text: Dark gray or black (#333333 or #000000)
+Accent Color: A calm and inviting color like a muted blue(#007BFF) 
+            or a soothing green (#00A859) can work well for highlighting links,
+               buttons, and interactive elements.
+
+
+1. important section -nav footer email 
+2. background color  / main body text
+3. heading /sub heading
+4. buttons / highlight important information, such as quotes, key points, or links
+5. icons, dividers, or decorative elements to add visual interest
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+
 
 */
 
@@ -51,11 +74,16 @@ const config: Config = {
         // => @media (min-width: 640px) { ... }
       },
       colors: {
-        primary: "#53BD95",
-        "primary-dark": "#2c785c",
+        backgroundColor: "#F5F5F5",
+        headingTextColor: "#000000",
+        subHeadingTextColor: "#666666",
+        accentColor: "#00A859", // button bg // link //
+        hyperlinkColor: "#007BFF", //
       },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
+        // sans for body
+        sans: ["Open Sans", "sans-serif"],
+        displayHead: ["Playfair Display", "sans-serif"],
       },
 
       backgroundImage: {

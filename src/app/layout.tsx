@@ -20,11 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${inter.className} mb-32  bg-gray-900 text-white
+        className={` ${inter.className} mb-32  bg-backgroundColor text-headingTextColor
          dark:bg-gray-900 
          dark:selection:bg-gray-900 
           dark:text-white 
-           selection:bg-gray-50`}
+           selection:bg-gray-50
+           `}
       >
         <Navbar />
         <main className=" ">{children}</main>

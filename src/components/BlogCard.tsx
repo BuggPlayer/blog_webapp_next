@@ -12,14 +12,14 @@ import React from "react";
 const BlogCard = async ({ article }: any) => {
   return (
     <div
-      className="flex my-5 rounded-md  bg-gray-100  shadow-md justify-between lg:flex-row md:flex-row sm:flex-row xs:flex-col-reverse   
+      className="flex my-5 rounded-md font-displayHead bg-white  shadow-md justify-between lg:flex-row md:flex-row sm:flex-row xs:flex-col-reverse   
       overflow-hidden md:p-3
        sm:p-2 xs:mx-3
      "
     >
       <div className=" lg:w-[80%] md:w-[80%] sm:w-[100%] xs:w-[100%] mr-5 xs:ml-2 sm:ml-2    my-2 ">
         <Link href="https://blog-webapp-next-wv8x.vercel.app/blogs/1">
-          <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
+          <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-headingTextColor font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
             {article.title}
           </h1>
         </Link>
@@ -33,11 +33,11 @@ const BlogCard = async ({ article }: any) => {
               className="rounded-lg overflow-hidden  "
             />
           </div>
-          <span className="text-sm font-bold text-gray-600">
+          <span className="text-sm font-bold font-displayHead  text-subHeadingTextColor">
             {/* {article.attributes.author.data.attributes.firstname} */}{" "}
             {/* {article.attributes.author.data.attributes.lastname}  */}
             blog&nbsp;
-            <span className="text-gray-400">
+            <span className="text-subHeadingTextColor">
               {formatDate(article.createdAt)}
             </span>
           </span>
@@ -51,16 +51,16 @@ const BlogCard = async ({ article }: any) => {
         </div> */}
 
         <div className=" flex gap-3 mt-4">
-          <p className="border bg-blue-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          <p className="border  inline-block text-sm px-2 bg-backgroundColor text-subHeadingTextColor rounded-xl ">
             React
           </p>
-          <p className="border bg-blue-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          <p className="border bg-backgroundColor inline-block text-sm px-2 text-subHeadingTextColor  rounded-xl ">
             Node
           </p>{" "}
-          <p className="border bg-blue-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          <p className="border bg-backgroundColor inline-block text-sm px-2  text-subHeadingTextColor rounded-xl ">
             Javascript
           </p>{" "}
-          <p className="border  bg-blue-200 inline-block text-sm px-2  text-gray-400 rounded-xl ">
+          <p className="border  bg-backgroundColor inline-block text-sm px-2  text-subHeadingTextColor rounded-xl ">
             Express
           </p>
         </div>
