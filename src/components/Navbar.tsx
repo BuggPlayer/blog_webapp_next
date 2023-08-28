@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex shadow-md  items-center justify-between px-4 p-2 h-20">
+    <nav className="flex   bg-gray-800  shadow-md  items-center justify-between px-4 p-2 h-20">
       <Link href="/">
         <div className="flex items-center rounded-md cursor-pointer">
           <Image src="/img1.jpg" alt="no img" height={35} width={40} />
@@ -27,7 +27,7 @@ const Navbar = () => {
         </li>
       </ul> */}
 
-      <ul className="flex  md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
+      <ul className="flex md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
         <li className="mr-6 font-medium text-gray-600">
           <a href="#" className="hover:text-gray-400">
             <svg

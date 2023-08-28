@@ -1,5 +1,14 @@
 import type { Config } from "tailwindcss";
 
+
+
+
+// Color Code:
+// #20727F
+// #0E353F
+// #767676
+
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,7 +36,7 @@ const config: Config = {
         "primary-dark": "#2c785c",
       },
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        sans: ["Albert Sans", "sans-serif"],
       },
 
       backgroundImage: {
