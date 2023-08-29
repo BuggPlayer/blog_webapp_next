@@ -77,13 +77,14 @@ const config: Config = {
         backgroundColor: "#F5F5F5",
         headingTextColor: "#000000",
         subHeadingTextColor: "#666666",
-        accentColor: "#00A859", // button bg // link //
+        accentColor: "#FFA500", // button bg // link //
         hyperlinkColor: "#007BFF", //
       },
       fontFamily: {
         // sans for body
+        // Montserrat
         sans: ["Open Sans", "sans-serif"],
-        displayHead: ["Playfair Display", "sans-serif"],
+        displayHead: ["Montserrat", "sans-serif"],
       },
 
       backgroundImage: {
