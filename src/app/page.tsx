@@ -51,7 +51,7 @@ const Home = ({ categories, articles }: any) => {
     },
   ];
   return (
-    <main className="dark:text-black ">
+    <main className="dark:text-black  ">
       <div className=" lg:p-6 md:p-4 sm:p-2 xs:p-1  mx-auto font-sans ">
         <Head>
           <title> Blog Homepage</title>

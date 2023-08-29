@@ -83,7 +83,7 @@ const config: Config = {
       fontFamily: {
         // sans for body
         // Montserrat
-        sans: ["Open Sans", "sans-serif"],
+        sans: ["sans-serif"],
         displayHead: ["Montserrat", "sans-serif"],
       },
 
