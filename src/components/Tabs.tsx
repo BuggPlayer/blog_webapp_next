@@ -30,7 +30,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
       <ul className=" flex items-center"> 
         <li
           className={
-            "mr-6 pb-3 border-b-4 rounded-sm border-accentColor text-accentColor "
+            "mr-6 pb-3 border-b-4 rounded-sm border-accentColor text-black "
             // +
             // `${
             //   router.pathname === "/"
