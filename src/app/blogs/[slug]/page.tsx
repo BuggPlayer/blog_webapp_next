@@ -17,7 +17,7 @@ const page = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="  bg-backgroundColor   mx-5 my-8 border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
+      <div className="  bg-backgroundColor   mx-5 my-8 justify-center border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
         <div className=" p-3 lg:w-[20%] md:w-[20%] sm:hidden xs:hidden bg-white   rounded-md shadow-sm">
           <h2 className="font-bold text-gray-600 text-lg">
             Signup to our newsletter
@@ -180,8 +180,6 @@ const page = () => {
               that it has a more-or-less normal distribution of
             </p>
           </div>
-
-        
         </div>
         <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full  bg-white   rounded-md  sticky top-0  border-l-2  inline-block-2  text-center  p-3   shadow-sm">
           <h2 className="font-bold text-gray-600 text-lg">
@@ -261,9 +259,8 @@ const page = () => {
           <hr className="my-6 border-gray-100" />
         </div>
       </div>
-     
-            {/* <Comments /> */}
-          
+
+      {/* <Comments /> */}
     </>
   );
 };
