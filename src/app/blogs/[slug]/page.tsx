@@ -18,7 +18,7 @@ const page = () => {
       </Head>
 
       <div className="  bg-backgroundColor   mx-5 my-8 border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
-        <div className=" p-3 lg:w-[20%] md:w-[20%] sm:w-full xs:w-full bg-white   rounded-md shadow-sm">
+        <div className=" p-3 lg:w-[20%] md:w-[20%] sm:hidden xs:hidden bg-white   rounded-md shadow-sm">
           <h2 className="font-bold text-gray-600 text-lg">
             Signup to our newsletter
           </h2>

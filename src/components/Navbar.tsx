@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="flex  font-displayHead    shadow-md  items-center justify-between px-4 p-2 h-20">
       <Link href="/">
         <div className="flex items-center rounded-md cursor-pointer">
-          <Image src="/img1.jpg" alt="no img" height={35} width={40} />
+          <Image src="/logo1.png" alt="no img" height={35} width={40} />
           <span className="font-bold ml-2 ">Tech Blog</span>
         </div>
       </Link>

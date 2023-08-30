@@ -18,17 +18,17 @@ const BlogCard = async ({ article }: any) => {
      "
     >
       <div className=" lg:w-[80%] md:w-[80%] sm:w-[100%] xs:w-[100%] mr-5 xs:ml-2 sm:ml-2    my-2 ">
-        <Link href="https://blog-webapp-next-update-buggplayer.vercel.app/blogs/1">
+        <Link href="/blogs/1">
           <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-headingTextColor font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
             {article.title}
           </h1>
         </Link>
         <div className="flex items-center md:my-4  sm:my-2 xs:my-1">
-          <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
+          <div className="rounded-lg  overflow-hidden flex items-center justify-center mr-2">
             <Image
-              src={`/img2.jpg`}
-              height={40}
-              width={40}
+              src={`/user-profile.png`}
+              height={30}
+              width={30}
               alt="image"
               className="rounded-lg overflow-hidden  "
             />
@@ -36,8 +36,8 @@ const BlogCard = async ({ article }: any) => {
           <span className="text-sm font-bold font-displayHead  text-subHeadingTextColor">
             {/* {article.attributes.author.data.attributes.firstname} */}{" "}
             {/* {article.attributes.author.data.attributes.lastname}  */}
-            blog&nbsp;
-            <span className="text-subHeadingTextColor">
+            Tech Blog&nbsp;
+            <span className=" font-normal   text-subHeadingTextColor">
               {formatDate(article.createdAt)}
             </span>
           </span>
@@ -72,7 +72,7 @@ const BlogCard = async ({ article }: any) => {
         width={150}
         height={150}
         className="
-      lg:w-80 md:w-56 h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
+      lg:w-70 md:w-48 h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
         "
       />
     </div>
