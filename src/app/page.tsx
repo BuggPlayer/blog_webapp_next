@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 const Home = ({ categories, articles }: any) => {
 
   return (
-    <main className="dark:text-black  ">
+    <main className="  ">
       <div className=" lg:p-6 md:p-4 sm:p-2 xs:p-1  mx-auto font-sans ">
         <Head>
           <title> Blog Homepage</title>
@@ -15,7 +15,7 @@ const Home = ({ categories, articles }: any) => {
         </Head>
 
         <Tabs />
-        <h1 className="my-5 text-2xl ">Recent Articles</h1>
+        <h1 className="my-5 text-2xl  ">Recent Articles</h1>
         <ArticleList />
       </div>
     </main>
