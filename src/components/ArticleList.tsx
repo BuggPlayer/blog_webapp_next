@@ -37,9 +37,12 @@ const ArticleList = async () => {
       </div>
 
       
-      <div className="rounded-md flex justify-center   my-4  px-4 lg:w-[25%]   py-2 ">
-        <BlogCardWithImage />
+      <div className="gap-10 flex flex-col ">
+        <BlogCardWithImage  text="  Get unlimited access"  btn={true}/>
+        <BlogCardWithImage  text="  We are here for you "  btn={false}/>
+        <BlogCardWithImage  text="  Get unlimited access"  btn={true}/>
       </div>
+      
     </div>
   );
 };

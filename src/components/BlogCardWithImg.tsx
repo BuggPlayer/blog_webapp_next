@@ -7,24 +7,26 @@ import React from "react";
 //   article: IArticle;
 // }
 
-const BlogCardWithImg = ({ article }: any) => {
+const BlogCardWithImg = ({ text, btn }: any) => {
   return (
     <div
-      className=" bg-gray-200 flex-row  md:flex-row lg:flex-row sm:flex-col  flex h-60
+      className=" bg-white rounded-md flex-row flex  justify-center md:flex-row lg:flex-row sm:flex-col   h-40
      items-center  px-4 "
     >
       <div className="p-3 sm:p-1 min-[320px]:p-1">
         <p className="md:text-md  lg:text-lg sm:text-sm text-black font-bold cursor-pointer">
-          Get unlimeted access to tech blog everthing here!
+          {text}
         </p>
         <p className="my-2 mb-5 text-gray-400">
           plan start as free for students
         </p>
-        <Link href="#" className="">
-          <span className="bg-gray-400 rounded-md p-3 mt-10  ">
+        {btn && (
+          <Link href="#" className="">
+            <span className="bg-gray-400 rounded-md p-3 mt-10  ">
             Get unlimited access
-          </span>
-        </Link> 
+            </span>
+          </Link>
+        )}
       </div>
       {/* <div className="">
         <svg

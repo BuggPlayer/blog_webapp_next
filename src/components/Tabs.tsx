@@ -67,7 +67,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
         })}
       </ul>
 
-      <div className="flex rounded-sm bg-gray-200 px-2 sm:my-5 xs:my-5 md:w-[40%] lg:w-[40%] sm:w-[80%] xs:w-[90%]  items-center">
+      <div className="flex rounded-sm bg-white px-2 sm:my-5 xs:my-5 md:w-[40%] lg:w-[40%] sm:w-[80%] xs:w-[90%]  items-center">
         <svg
           className="h-4 fill-gray-500"
           xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
           // onChange={(e) => handleOnSearch(e.target.value)}
           type="text"
           placeholder="Search"
-          className="outline-none sm:p-3 xs:p-3 bg-gray-200 px-2 py-1 ml-1 "
+          className="outline-none sm:p-3 xs:p-3 bg-white px-2 py-1 ml-1 "
         />
       </div>
     </div>

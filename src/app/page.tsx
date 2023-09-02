@@ -4,52 +4,7 @@ import Tabs from "@/components/Tabs";
 import Navbar from "@/components/Navbar";
 
 const Home = ({ categories, articles }: any) => {
-  const staticArticle = [
-    {
-      id: 1,
-      first_name: "Jeanette",
-      last_name: "Penddreth",
-      title: "Choosing the Ideal Tech Stack for Your Project: A Comprehensive Guide",
-      description:
-        "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      email: "jpenddreth0@census.gov",
-      gender: "Female",
-      ip_address: "26.58.193.2",
-    },
-    {
-      id: 2,
-      first_name: "Giavani",
-      last_name: "Frediani",
-      email: "gfrediani1@senate.gov",
-      title: "CI/CD Pipeline: Automating Software Delivery",
-      gender: "Male",
-      ip_address: "229.179.4.212",
-      description:
-        "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    },
-    {
-      id: 1,
-      first_name: "Jeanette",
-      last_name: "Penddreth",
-      title: "Choosing the Ideal Tech Stack for Your Project: A Comprehensive Guide",
-      description:
-        "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      email: "jpenddreth0@census.gov",
-      gender: "Female",
-      ip_address: "26.58.193.2",
-    },
-    {
-      id: 1,
-      first_name: "Jeanette",
-      last_name: "Penddreth",
-      title: "Mastering Effective Code Reviews: Best Practices",
-      description:
-        "urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      email: "jpenddreth0@census.gov",
-      gender: "Female",
-      ip_address: "26.58.193.2",
-    },
-  ];
+
   return (
     <main className="dark:text-black  ">
       <div className=" lg:p-6 md:p-4 sm:p-2 xs:p-1  mx-auto font-sans ">

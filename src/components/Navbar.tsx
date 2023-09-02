@@ -11,21 +11,6 @@ const Navbar = () => {
           <span className="font-bold ml-2 ">Tech Blog</span>
         </div>
       </Link>
-      {/* <div className="  visible min-[320px]:hidden  ">Happy reading</div> */}
-      {/* <ul className=" hidden flex items-center">
-        <li className="mr-6 font-medium text-gray-600">
-          <a href="#">Products</a>
-        </li>
-        <li className="mr-6 font-medium text-gray-600">
-          <a href="#">pricing</a>
-        </li>
-        <li className="mr-6 font-medium text-gray-600">
-          <a href="#">Docs</a>
-        </li>
-        <li className="mr-6 font-medium text-gray-600">
-          <a href="#">Company</a>
-        </li>
-      </ul> */}
 
       <ul className="flex md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
         <li className="mr-6 font-medium text-gray-600">
