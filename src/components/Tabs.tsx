@@ -59,7 +59,7 @@ const Tabs = ({ categories, paramsId, params }: any) => {
         })}
       </ul>
 
-      <div className="flex rounded-sm bg-white px-2 sm:my-5 xs:my-5 md:w-[40%] lg:w-[40%] sm:w-[80%] xs:w-[90%]  items-center">
+      <div className="flex rounded-sm bg-white px-2 sm:my-5 xs:my-5 md:w-[30%] lg:w-[30%] sm:w-[70%] xs:w-[90%]  items-center">
         <svg
           className="h-4 fill-gray-500"
           xmlns="http://www.w3.org/2000/svg"
