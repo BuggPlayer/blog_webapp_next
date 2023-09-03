@@ -7,11 +7,6 @@ import Tabs from "@/components/Tabs";
 import ArticleList from "@/components/ArticleList";
 import { BaseURl } from "@/utils/config";
 
-// blogs api
-const getBlogsData = async () => {
-  const res = await fetch(`${BaseURl}api/blog/getBlogs`);
-  return await res.json();
-};
 
 // cagtegory api
 const getCategory = async () => {
@@ -22,19 +17,30 @@ const getCategory = async () => {
 
 
 const Category = async ({ params }: any) => {
+
+  // blogs api
+const getBlogsData = async () => {
+  const res = await fetch(`${BaseURl}api/blog/postByCategory/?categoryId=${params.category}`);
+  return await res.json();
+};
+
   const { data: articleData } = await getBlogsData();
+// console.log(articleData);
+
+
+
   const data = await getCategory();
 
-  const getSingleCategory = async () => {
-    const res = await fetch(
-      `${BaseURl}api/category/singlecategory?${params.category}`
-    );
-    // console.log(res.json());
+  // const getSingleCategory = async () => {
+  //   const res = await fetch(
+  //     `${BaseURl}api/category/singlecategory/?id=${params.category}`
+  //   );
+  //   // console.log(res.json());
   
-    return await res.json();
-  };
-  const singalCategory = await getSingleCategory();
-  console.log("singalCategory", singalCategory);
+  //   return await res.json();
+  // };
+  // const singalCategory = await getSingleCategory();
+  // console.log("singalCategory", singalCategory);
 
   const formattedCategory = () => {
     return capitalizeFirstLetter(makeCategory(params.category));
