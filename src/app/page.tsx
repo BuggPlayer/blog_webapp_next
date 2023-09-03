@@ -2,7 +2,14 @@ import Head from "next/head";
 import ArticleList from "@/components/ArticleList";
 import Tabs from "@/components/Tabs";
 import Navbar from "@/components/Navbar";
+import { BaseURl } from "@/utils/config";
 
+
+const getBlogsData = async () => {
+  
+  const res = await fetch(`${BaseURl}api/category/get`);
+  return await res.json();
+};
 const Home = ({ categories, articles }: any) => {
 
   return (
@@ -14,7 +21,7 @@ const Home = ({ categories, articles }: any) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Tabs />
+        <Tabs     />
         <h1 className="my-5 text-2xl  ">Recent Articles</h1>
         <ArticleList />
       </div>

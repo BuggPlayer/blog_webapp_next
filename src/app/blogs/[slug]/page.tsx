@@ -1,11 +1,30 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 
 import Head from "next/head";
 import Comments from "@/components/Comments";
+import axios from "axios";
+import { BaseURl } from "@/utils/config";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
+import { Html } from "next/document";
 
-const page = () => {
+const DetailsPage = ({ params }: any) => {
+  const [post, setPost] = useState([]);
+  useEffect(() => {
+    axios({
+      method: "get",
+      url: `${BaseURl}api/blog/getsingle/${params.slug}`,
+    })
+      .then((res) => {
+        setPost(res.data.data);
+        console.log("ressssss", res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <>
       <Head>
@@ -97,13 +116,13 @@ const page = () => {
         </div>
         <div className=" lg:w-[60%] md:w-[60%]  sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
           <h1 className="text-3xl font-bold py-2  ">
-            {/* {article.attributes.Title} */}
-            hello word this is new world
+            {post.title || "title"}
+            {/* hello word this is new world */}
           </h1>
           <div className="flex items-center my-4">
             <div className="rounded-lg overflow-hidden flex items-center justify-center mr-2">
               <Image
-                src="/img1.jpg"
+                src="/user-profile.png"
                 alt="no"
                 // src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                 height={40}
@@ -123,62 +142,16 @@ const page = () => {
           <div className="text-lg text-gray-600 leading-8">
             <img
               className="w-full my-12 mb-6"
-              src="/img2.jpg"
+              // src="/img2.jpg"
               alt="no"
-
-              // src={`http://localhost:1337${article.attributes.Image.data.attributes.url}`}
+              src={`${post.imageThumb}`}
               // alt={article.attributes.Title}
             />
-            {/* <MDXRemote
-              // {...(article.attributes.body as MDXRemoteSerializeResult)}
-            {
-            
-            }
-            /> */}
-            <p className="text-subHeadingTextColor   py-2">
-              What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industrys standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scracmbled it to make a
-              type specimen book. It has survived not only five centuries, but
-              also the leap into electronic typesetting, remaining essentially
-              unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently
-              What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industrys standard dummy <br />
-              text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently What is Lorem
-              Ipsum? Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industrys standard{" "}
-              <br /> dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to make a type specimen
-              book. It has survived not only five centuries, but also the leap
-              into electronic typesetting, remaining essentially unchanged. It
-              was popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently What is Lorem
-              Ipsum? Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industrys standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              <br /> popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently What is
-              Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industrys standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently Lorem Ipsum is
-              that it has a more-or-less normal distribution of
-            </p>
+            {/* <MDXRemote {...(post.content as MDXRemoteSerializeResult)} /> */}
+            <p
+              className="text-subHeadingTextColor   py-2"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
           </div>
         </div>
         <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full  bg-white   rounded-md  sticky top-0  border-l-2  inline-block-2  text-center  p-3   shadow-sm">
@@ -265,4 +238,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default DetailsPage;
