@@ -6,7 +6,7 @@ import React from "react";
 
 
 const BlogCard = async ({ article }: any) => {
-  // console.log("article", article);
+  console.log("article", article);
 
   return (
     <div
@@ -56,25 +56,17 @@ const BlogCard = async ({ article }: any) => {
           <p className="border  inline-block text-sm px-2 bg-backgroundColor text-subHeadingTextColor rounded-xl ">
             {article.category}
           </p>
-          {/* <p className="border bg-backgroundColor inline-block text-sm px-2 text-subHeadingTextColor  rounded-xl ">
-            Node
-          </p>{" "}
-          <p className="border bg-backgroundColor inline-block text-sm px-2  text-subHeadingTextColor rounded-xl ">
-            Javascript
-          </p>{" "}
-          <p className="border  bg-backgroundColor inline-block text-sm px-2  text-subHeadingTextColor rounded-xl ">
-            Express
-          </p> */}
+ 
         </div>
       </div>
 
       <Image
-        src="/img1.jpg"
+        src="/img4.jpg"
         alt=""
         width={150}
         height={150}
         className="
-      lg:w-70 md:w-48 h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
+      lg:w-70 md:w-auto bg-gray-300 h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
         "
       />
     </div>
