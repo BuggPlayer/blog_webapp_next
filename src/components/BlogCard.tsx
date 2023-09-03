@@ -10,6 +10,8 @@ import React from "react";
 // }
 
 const BlogCard = async ({ article }: any) => {
+  // console.log("article", article);
+
   return (
     <div
       className="flex my-5 rounded-md font-displayHead bg-white  shadow-md justify-between lg:flex-row md:flex-row sm:flex-row xs:flex-col-reverse   
@@ -18,7 +20,18 @@ const BlogCard = async ({ article }: any) => {
      "
     >
       <div className=" lg:w-[80%] md:w-[80%] sm:w-[100%] xs:w-[100%] mr-5 xs:ml-2 sm:ml-2    my-2 ">
-        <Link href="/blogs/1">
+        <Link 
+        href={{
+          pathname:`blogs/${article.slug}`,
+          query: {name:"hello"} // the data
+        }}
+    
+        // href={`blogs/${article.slug}`}
+        
+        
+        
+        
+        >
           <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-headingTextColor font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
             {article.title}
           </h1>
@@ -52,9 +65,9 @@ const BlogCard = async ({ article }: any) => {
 
         <div className=" flex gap-3 mt-4">
           <p className="border  inline-block text-sm px-2 bg-backgroundColor text-subHeadingTextColor rounded-xl ">
-            React
+            {article.category}
           </p>
-          <p className="border bg-backgroundColor inline-block text-sm px-2 text-subHeadingTextColor  rounded-xl ">
+          {/* <p className="border bg-backgroundColor inline-block text-sm px-2 text-subHeadingTextColor  rounded-xl ">
             Node
           </p>{" "}
           <p className="border bg-backgroundColor inline-block text-sm px-2  text-subHeadingTextColor rounded-xl ">
@@ -62,7 +75,7 @@ const BlogCard = async ({ article }: any) => {
           </p>{" "}
           <p className="border  bg-backgroundColor inline-block text-sm px-2  text-subHeadingTextColor rounded-xl ">
             Express
-          </p>
+          </p> */}
         </div>
       </div>
 
