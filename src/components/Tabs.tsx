@@ -1,14 +1,16 @@
+"use client";
 import { BaseURl } from "@/utils/config";
 import axios from "axios";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React, { useState } from "react";
 
-const Tabs = ({ categories, handleOnSearch }: any) => {
-  // const useRouter = 
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+const Tabs = ({ categories, paramsId, params }: any) => {
+  const router = usePathname();
+  console.log("id", router);
+
   const isActiveLink = (category: any) => {
-    return false;
-    // return category.attributes.Slug === router.query.category;
+    // return false;
+    return category._id === paramsId;
   };
 
   return (
@@ -16,19 +18,20 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
       <ul className=" flex items-center">
         <li
           className={
-            "mr-6 pb-3 border-b-4 rounded-sm border-accentColor text-black dark:text-white "
-            // +
-            // `${
-            //   router.pathname === "/"
-            //     ? "border-green-500 text-primary"
-            //     : "border-red-400 text-gray-400"
-            // }`
+            "mr-6 pb-3 border-b-4 rounded-sm  dark:text-white " +
+            `${
+              router === "/"
+                ? "border-accentColor text-black"
+                : "border-gray-400 text-gray-400"
+            }`
           }
         >
           <Link href="/">Recent</Link>
         </li>
 
         {categories?.map((category: any, index: number) => {
+          // console.log("cat" , category);
+
           return (
             <li
               key={index}
@@ -36,16 +39,19 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
                 "mr-6 pb-3 border-b-4 rounded-sm " +
                 `${
                   isActiveLink(category)
-                    ? "border-primary text-primary"
+                    ? "border-accentColor text-black"
                     : "border-gray-400 text-gray-400"
                 }`
               }
             >
               <Link
-                href={""}
-                //  href={`/category/${category.attributes.Slug}`}
+                href={`/category/${category._id}`}
+                // href={{
+                //   pathname: `/category`,
+
+                // }}
+                // as={`/category/${category.name}`}
               >
-                {/* {category.attributes.Title} */}
                 {category.name}
               </Link>
             </li>
