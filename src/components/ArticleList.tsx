@@ -16,20 +16,13 @@ import { BaseURl } from "@/utils/config";
   flex-wrap: wrap;
   max-width: 800px;
 } */
-const getBlogsData = async () => {
-  
-  const res = await fetch(`${BaseURl}api/blog/getBlogs`);
-  return await res.json();
-};
-const ArticleList = async () => {
-  const { data: articleData } = await getBlogsData();
 
-  // console.log(articleData);
-  // grid border-4  grid-gap gap-16 mt-16
+const ArticleList = async ({articles}:any) => {
+
   return (
     <div className="flex  justify-between lg:flex-row 	md:flex-col sm:flex-col xs:flex-col  ">
       <div className="  lg:w-[75%] md:w-[100%]  ">
-        {articleData?.map((article: any) => {
+        {articles?.map((article: any) => {
       
           return (
             <div key={article.id}>

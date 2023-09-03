@@ -1,25 +1,11 @@
-"use client";
+import { BaseURl } from "@/utils/config";
+import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
-// import { ICategory } from '../types';
-
-// interface IPropType {
-//     categories: ICategory[];
-//     handleOnSearch: (query: string) => void;
-// }
+import React, { useState } from "react";
 
 const Tabs = ({ categories, handleOnSearch }: any) => {
-  const catego = [
-    { name: "Nextjs " },
-    { name: "Ractjs " },
-    { name: "HTML " },
-    // { name: "NODE " },
-    // { name: "Express " },
-    // { name: "CSS " },
-  ];
-  const router = useRouter();
-
+  // const useRouter = 
   const isActiveLink = (category: any) => {
     return false;
     // return category.attributes.Slug === router.query.category;
@@ -27,7 +13,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
 
   return (
     <div className="my-6 flex items-center font-displayHead justify-between lg:flex-row md:flex-row  sm:flex-col xs:flex-col  border-b-2 border-gray-100">
-      <ul className=" flex items-center"> 
+      <ul className=" flex items-center">
         <li
           className={
             "mr-6 pb-3 border-b-4 rounded-sm border-accentColor text-black dark:text-white "
@@ -42,7 +28,7 @@ const Tabs = ({ categories, handleOnSearch }: any) => {
           <Link href="/">Recent</Link>
         </li>
 
-        {catego.map((category: any, index: number) => {
+        {categories?.map((category: any, index: number) => {
           return (
             <li
               key={index}

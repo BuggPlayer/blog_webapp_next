@@ -8,10 +8,10 @@ import Comments from "@/components/Comments";
 import axios from "axios";
 import { BaseURl } from "@/utils/config";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
-import { Html } from "next/document";
+
 
 const DetailsPage = ({ params }: any) => {
-  const [post, setPost] = useState([]);
+  const [post, setPost]:any = useState([]);
   useEffect(() => {
     axios({
       method: "get",
@@ -116,7 +116,7 @@ const DetailsPage = ({ params }: any) => {
         </div>
         <div className=" lg:w-[60%] md:w-[60%]  sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
           <h1 className="text-3xl font-bold py-2  ">
-            {post.title || "title"}
+            {post?.title }
             {/* hello word this is new world */}
           </h1>
           <div className="flex items-center my-4">

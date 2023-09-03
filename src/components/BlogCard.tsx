@@ -3,11 +3,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import { IArticle } from "../types";
-// import { formatDate } from "../utils";
-// interface IPropType {
-//   article: IArticle;
-// }
+
 
 const BlogCard = async ({ article }: any) => {
   // console.log("article", article);

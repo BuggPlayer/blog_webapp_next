@@ -4,14 +4,25 @@ import Tabs from "@/components/Tabs";
 import Navbar from "@/components/Navbar";
 import { BaseURl } from "@/utils/config";
 
-
+// blogs api
 const getBlogsData = async () => {
-  
-  const res = await fetch(`${BaseURl}api/category/get`);
+  const res = await fetch(`${BaseURl}api/blog/getBlogs`);
   return await res.json();
 };
-const Home = ({ categories, articles }: any) => {
 
+// cagtegory api
+const getCategory = async () => {
+  const res = await fetch(`${BaseURl}api/category/getcategories`);
+  // console.log(res.json());
+  
+  return await res.json();
+};
+
+const Home = async () => {
+  const { data: articleData } = await getBlogsData();
+  const data = await getCategory();
+  // console.log("categoryData", data);
+// 
   return (
     <main className="  ">
       <div className=" lg:p-6 md:p-4 sm:p-2 xs:p-1  mx-auto font-sans ">
@@ -21,9 +32,9 @@ const Home = ({ categories, articles }: any) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Tabs     />
+        <Tabs  categories={data} />
         <h1 className="my-5 text-2xl  ">Recent Articles</h1>
-        <ArticleList />
+        <ArticleList articles={articleData} />
       </div>
     </main>
   );
