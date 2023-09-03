@@ -4,7 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-const Tabs = ({ categories, paramsId, params }: any) => {
+const Tabs = ({ categories, paramsId }: any) => {
   const router = usePathname();
   console.log("id", router);
 
@@ -21,7 +21,7 @@ const Tabs = ({ categories, paramsId, params }: any) => {
             "mr-6 pb-3 border-b-4 rounded-sm  dark:text-white " +
             `${
               router === "/"
-                ? "border-accentColor text-black"
+                ? "border-accentColor text-black dark:text-white"
                 : "border-gray-400 text-gray-400"
             }`
           }

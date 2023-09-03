@@ -21,7 +21,7 @@ const BlogCard = async ({ article }: any) => {
             pathname: `/${article.slug}`,
           }}
         >
-          <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-headingTextColor font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
+          <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-headingTextColor font-bold hover:decoration-2 hover:underline hover:cursor-pointer">
             {article.title}
           </h1>
         </Link>

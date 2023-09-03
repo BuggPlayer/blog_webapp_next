@@ -20,8 +20,8 @@ const getCategory = async () => {
 
 const Home = async () => {
   const { data: articleData } = await getBlogsData();
-  const data = await getCategory();
-  // console.log("categoryData", data);
+  const categoryData = await getCategory();
+  // console.log("categoryData", categoryData);
 // 
   return (
     <main className="  ">
@@ -32,7 +32,7 @@ const Home = async () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Tabs  categories={data} />
+        <Tabs      categories={categoryData} />
         <h1 className="my-5 text-2xl  ">Recent Articles</h1>
         <ArticleList articles={articleData} />
       </div>
