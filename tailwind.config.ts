@@ -84,7 +84,8 @@ const config: Config = {
         // sans for body
         // Montserrat
         sans: ["sans-serif"],
-        displayHead: ["Montserrat", "sans-serif"],
+        // displayHead: ["Montserrat", "sans-serif"],
+        displayHead: ["sans-serif"],
       },
 
       backgroundImage: {
