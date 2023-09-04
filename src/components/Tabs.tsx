@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 const Tabs = ({ categories, paramsId }: any) => {
   const router = usePathname();
-  console.log("id", router);
+  // console.log("id", router);
 
   const isActiveLink = (category: any) => {
     // return false;

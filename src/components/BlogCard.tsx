@@ -6,7 +6,7 @@ import React from "react";
 
 
 const BlogCard = async ({ article }: any) => {
-  console.log("article", article);
+  // console.log("article", article);
 
   return (
     <div

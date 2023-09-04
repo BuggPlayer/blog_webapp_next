@@ -19,7 +19,7 @@ const DetailsPage = ({ params }: any) => {
     })
       .then((res) => {
         setPost(res.data.data);
-        console.log("ressssss", res);
+        // console.log("ressssss", res);
       })
       .catch((err) => {
         console.log(err);
