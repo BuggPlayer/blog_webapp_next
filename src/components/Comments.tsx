@@ -6,7 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 // import { useInfiniteQuery } from "@tanstack/react-query";
 // import { REACT_APP_GOOGLE_API_KEY_1 } from "../utils/constants";
 import Comment from "./Comment";
-const Comments = ({ videoId, commentCount = 44 }: any) => {
+const Comments = ({ videoId, commentCount = 12 }: any) => {
   // const getComments = async (nextPageToken = "") => {
   //   const response = await fetch(
   //     BASE_URL +
@@ -35,7 +35,7 @@ const Comments = ({ videoId, commentCount = 44 }: any) => {
   // const comments = data?.pages?.flatMap((page) => page.items) ?? [];
 
   return (
-    <div className=" p-2">
+    <div className=" dark:text-black p-2">
       <div className="flex gap-8  items-center mb-4 ">
         <div className="comment-count font-medium ">
           {parseInt(commentCount).toLocaleString()} Comments

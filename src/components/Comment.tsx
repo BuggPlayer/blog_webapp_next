@@ -43,7 +43,7 @@ const Comment = ({ commentData }: any) => {
               <div className="like_icon hover:bg-zinc-200 p-2 rounded-full">
                 <BiLike
                   size="1.2rem"
-                  className="text-gray-600 dark:text-white"
+                  className="text-gray-600 dark:text-black"
                 />
               </div>
               <div className="like_count ">
@@ -58,7 +58,7 @@ const Comment = ({ commentData }: any) => {
               <div className="">
                 <BiDislike
                   size="1.2rem"
-                  className="text-gray-600 dark:text-white"
+                  className="text-gray-600 dark:text-black"
                 />
               </div>
             </button>
