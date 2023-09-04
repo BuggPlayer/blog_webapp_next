@@ -53,12 +53,12 @@ const Comments = ({ videoId, commentCount = 44 }: any) => {
         </div>
         <div className="comment_input w-full ">
           <input
-            className="border-b dark:border-white/50 w-[80%] h-8 focus:outline-none py-2 focus:border-black focus:border-b-2 dark:bg-zinc-900"
+            className="border-b  w-[80%] h-8 focus:outline-none py-2 focus:border-white focus:border-b-2 "
             type="text"
             placeholder="Add a comment..."
           />
           <div className="flex justify-end gap-4 pt-2 font-semibold">
-            <button className="hover:bg-zinc-200 dark:hover:bg-zinc-700 px-4 py-2 rounded-full">
+            <button className="hover:bg-zinc-200 dark:hover:bg-white px-4 py-2 rounded-full">
               Cancel
             </button>
             <button className="bg-gray-200 px-4 py-2 rounded-3xl text-gray-500">
