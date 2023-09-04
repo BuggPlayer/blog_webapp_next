@@ -8,6 +8,7 @@ import Head from "next/head";
 import axios from "axios";
 import { BaseURl } from "@/utils/config";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
+import Comments from "@/components/Comments";
 
 const DetailsPage = ({ params }: any) => {
   const [post, setPost]: any = useState([]);
@@ -36,7 +37,7 @@ const DetailsPage = ({ params }: any) => {
       </Head>
 
       <div className="  bg-backgroundColor   mx-5 my-8 justify-center border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
-        <div className=" p-3 lg:w-[20%] md:w-[20%] sm:hidden xs:hidden bg-white   rounded-md shadow-sm">
+        {/* <div className=" p-3 lg:w-[20%] md:w-[20%] sm:hidden xs:hidden bg-white   rounded-md shadow-sm">
           <h2 className="font-bold text-gray-600 text-lg">
             Signup to our newsletter
           </h2>
@@ -112,7 +113,7 @@ const DetailsPage = ({ params }: any) => {
             </a>
           </span>
           <hr className="my-6 border-gray-100" />
-        </div>
+        </div> */}
         <div className=" lg:w-[70%] md:w-[70%]  sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
           <h1 className="text-3xl font-bold py-2  ">
             {post?.title}
@@ -233,8 +234,12 @@ const DetailsPage = ({ params }: any) => {
           </div>
         </div>
       </div>
+<div className="bg-white shadow-md m-4">
 
-      {/* <Comments /> */}
+
+<Comments />
+</div>
+
     </>
   );
 };

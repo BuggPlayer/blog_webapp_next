@@ -23,8 +23,42 @@
 }
 
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #f88989; */
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(156, 156, 156);
+  /* scrollbar-color: var(--secondary) var(--primary); */
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  scrollbar-color: rgb(156, 156, 156);
+}
+
+*::-webkit-scrollbar-track {
+  /* background: var(--primary); */
+  border-radius: 5px;
+  /* background: white; */
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background-color: var(--secondary); */
+  border-radius: 14px;
+  height: 8px;
+  background-color: rgb(156, 156, 156);
+
+  /* border: 3px solid var(--primary); */
+}
+
+.tags-wrapper::-webkit-scrollbar {
+  overflow: hidden;
 }
 /* @layer components {
   .disabled {
