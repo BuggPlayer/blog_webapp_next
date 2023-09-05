@@ -31,10 +31,8 @@ const Comment = ({ commentData }: any) => {
             </div>
           </div>
           <div className="comment">
-            opposed to using Content here, content, making it look like
-            readable English. and a
-            search for  will uncover many web sites still in their
-            infancy.
+            Opposed to using Content here, content, making it look like
+            readable English.
             {/* {commentData?.snippet?.topLevelComment?.snippet?.textDisplay ??
               commentData.snippet.textDisplay} */}
           </div>
