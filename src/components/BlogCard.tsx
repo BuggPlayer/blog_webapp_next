@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-
 const BlogCard = async ({ article }: any) => {
   // console.log("article", article);
 
@@ -56,17 +55,17 @@ const BlogCard = async ({ article }: any) => {
           <p className="border  inline-block text-sm px-2 bg-backgroundColor text-subHeadingTextColor rounded-xl ">
             {article.category}
           </p>
- 
         </div>
       </div>
 
       <Image
-        src="/img4.jpg"
+        src="/desk.jpg"
         alt=""
-        width={150}
-        height={150}
+        width={300}
+        height={300}
+        priority
         className="
-      lg:w-70 md:w-auto bg-gray-300 h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
+      lg:w-70 md:w-auto  h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
         "
       />
     </div>

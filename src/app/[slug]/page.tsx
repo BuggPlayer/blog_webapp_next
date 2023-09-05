@@ -140,11 +140,14 @@ const DetailsPage = ({ params }: any) => {
             </span>
           </div>
           <div className="text-lg text-gray-600 leading-8">
-            <img
+            <Image
               className="w-full my-12 mb-6"
               // src="/img2.jpg"
-              alt="no"
-              src={`${post.imageThumb}`}
+              alt="no alt"
+              src="/desk.jpg"
+              height={500}
+              width={500}
+              // src={`${post.imageThumb}`}
               // alt={article.attributes.Title}
             />
             {/* <MDXRemote {...(post.content as MDXRemoteSerializeResult)} /> */}
@@ -156,9 +159,7 @@ const DetailsPage = ({ params }: any) => {
         </div>
         <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full      sticky top-0     text-center  p-3   ">
           <div className="bg-white rounded-md p-3 ">
-            <h2 className="font-bold  text-lg ">
-              Signup to our newsletter
-            </h2>
+            <h2 className="font-bold  text-lg ">Signup to our newsletter</h2>
             <p className="mt-4 text-gray-500">
               Get the latest article on all things data delivered straight to
               your inbox
@@ -234,12 +235,9 @@ const DetailsPage = ({ params }: any) => {
           </div>
         </div>
       </div>
-<div className="bg-white shadow-md m-4">
-
-
-<Comments />
-</div>
-
+      <div className="bg-white shadow-md m-4">
+        <Comments />
+      </div>
     </>
   );
 };
