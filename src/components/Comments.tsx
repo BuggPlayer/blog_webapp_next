@@ -6,7 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 // import { useInfiniteQuery } from "@tanstack/react-query";
 // import { REACT_APP_GOOGLE_API_KEY_1 } from "../utils/constants";
 import Comment from "./Comment";
-const Comments = ({ videoId, commentCount = 12 }: any) => {
+const Comments = ({ videoId, commentCount = 0 }: any) => {
   // const getComments = async (nextPageToken = "") => {
   //   const response = await fetch(
   //     BASE_URL +
@@ -68,9 +68,9 @@ const Comments = ({ videoId, commentCount = 12 }: any) => {
         </div>
       </div>
       <div className="comments">
-        {[1, 2, 3, 4, 5].map((comment) => (
+        {/* {[1, 2, 3, 4, 5].map((comment) => (
           <Comment key="" commentData={"comment"} />
-        ))}
+        ))} */}
       </div>
 
       {/* <button
