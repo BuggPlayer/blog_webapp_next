@@ -38,84 +38,7 @@ const DetailsPage = ({ params }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="  bg-backgroundColor   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
-        {/* <div className=" p-3 lg:w-[20%] md:w-[20%] sm:hidden xs:hidden bg-white   rounded-md shadow-sm">
-          <h2 className="font-bold text-gray-600 text-lg">
-            Signup to our newsletter
-          </h2>
-          <p className="mt-4 text-gray-500">
-            Get the latest article on all things data delivered straight to your
-            inbox
-          </p>
-          <input
-            className="border  p-2 pl-3 my-6 outline-primary"
-            type="email"
-            placeholder="Your work email"
-          />
-          <button className="border-2 border-primary rounded py-1 px-6 text-primary font-bold">
-            Subscribe
-          </button>
-          <hr className="my-6 border-gray-100" />
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <span className="text-gray-500 mr-2">Share</span>
-            <a className="text-gray-500">
-              <svg
-                fill="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-500">
-              <svg
-                fill="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-500">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a className="ml-3 text-gray-500">
-              <svg
-                fill="currentColor"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="0"
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="none"
-                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                ></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
-          <hr className="my-6 border-gray-100" />
-        </div> */}
+      <div className="  bg-backgroundColor dark:text-black   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
         <div className=" lg:w-[70%] md:w-[70%]  sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
           <h1 className="text-3xl font-bold py-2  ">
             {post?.title}
@@ -198,10 +121,10 @@ const DetailsPage = ({ params }: any) => {
               className="w-full my-12 mb-6"
               // src="/img2.jpg"
               alt="no alt"
-              src="/desk.jpg"
+              // src="/desk.jpg"
               height={500}
               width={500}
-              // src={`${post.imageThumb}`}
+              src={`${post.imageThumb}`}
               // alt={article.attributes.Title}
             />
             {/* <MDXRemote {...(post.content as MDXRemoteSerializeResult)} /> */}
@@ -211,7 +134,7 @@ const DetailsPage = ({ params }: any) => {
             />
           </div>
         </div>
-        <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full      sticky top-0     text-center  p-3   ">
+        <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full sticky top-0 text-center  p-3   ">
           <div className="bg-white rounded-md p-3 ">
             <h2 className="font-bold  text-lg ">Signup to our newsletter</h2>
             <p className="mt-4 text-gray-500">

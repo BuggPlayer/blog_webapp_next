@@ -37,7 +37,7 @@ const Home = async () => {
         </Head>
 
         <Tabs categories={categoryData} />
-        <h1 className="my-5 text-2xl  ">Recent Articles</h1>
+        <h1 className="my-5 mx-1 text-2xl  ">Recent Articles</h1>
         <ArticleList articles={articleData} />
       </div>
     </main>
