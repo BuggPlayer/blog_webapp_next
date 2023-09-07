@@ -6,13 +6,17 @@ import { BaseURl } from "@/utils/config";
 
 // blogs api
 const getBlogsData = async () => {
-  const res = await fetch(`${BaseURl}api/blog/getBlogs`);
+  const res = await fetch(`${BaseURl}api/blog/getBlogs`, {
+    cache: "no-store",
+  });
   return await res.json();
 };
 
 // cagtegory api
 const getCategory = async () => {
-  const res = await fetch(`${BaseURl}api/category/getcategories`);
+  const res = await fetch(`${BaseURl}api/category/getcategories`, {
+    cache: "no-store",
+  });
   // console.log(res.json());
 
   return await res.json();

@@ -121,11 +121,11 @@ const DetailsPage = ({ params }: any) => {
               className="w-full my-12 mb-6"
               // src="/img2.jpg"
               alt="no alt"
-              // src="/desk.jpg"
+              src="/desk.jpg"
               height={500}
               width={500}
-              src={`${post.imageThumb}`}
-              // alt={article.attributes.Title}
+              // src={`${post.imageThumb}`}
+              // alt={post.title}
             />
             {/* <MDXRemote {...(post.content as MDXRemoteSerializeResult)} /> */}
             <p
