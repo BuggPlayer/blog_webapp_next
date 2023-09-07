@@ -9,7 +9,9 @@ import { BaseURl } from "@/utils/config";
 
 // cagtegory api
 const getCategory = async () => {
-  const res = await fetch(`${BaseURl}api/category/getcategories`);
+  const res = await fetch(`${BaseURl}api/category/getcategories`, {
+    cache: "no-store",
+  });
   return await res.json();
 };
 
@@ -17,7 +19,7 @@ const Category = async ({ params }: any) => {
   // blogs api
   const getBlogsData = async () => {
     const res = await fetch(
-      `${BaseURl}api/blog/postByCategory/?categoryId=${params.category}`
+      `${BaseURl}api/blog/postByCategory?categoryId=${params.category}`
     );
     return await res.json();
   };

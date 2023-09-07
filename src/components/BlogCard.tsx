@@ -53,7 +53,7 @@ const BlogCard = async ({ article }: any) => {
 
         <div className=" flex justify-between text-gray-600 gap-3 mt-4">
           <p className="border  inline-block text-sm px-2 bg-backgroundColor text-subHeadingTextColor rounded-xl ">
-            {article.category}
+            {article?.category?.name}
           </p>
           <div className=" flex gap-3 sm:mr-6 xs:mr-6">
             <a href="#" className="hover:text-gray-400 cursor-pointer">

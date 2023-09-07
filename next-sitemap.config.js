@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://localhost:3000",
+  siteUrl: "https://www.techblogging.in",
   generateRobotsTxt: true,
   exclude: ["/server-sitemap.xml", "/blog/*"],
   robotsTxtOptions: {
@@ -13,6 +13,6 @@ module.exports = {
         allow: "/",
       },
     ],
-    additionalSitemaps: ["https://localhost:3000/server-sitemap.xml"],
+    additionalSitemaps: ["https://www.techblogging.in/server-sitemap.xml"],
   },
 };

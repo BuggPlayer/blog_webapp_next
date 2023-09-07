@@ -11,6 +11,9 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
 import Comments from "@/components/Comments";
 
 const DetailsPage = ({ params }: any) => {
+  console.log("====================================");
+  console.log(params);
+  console.log("====================================");
   const [post, setPost]: any = useState([]);
   useEffect(() => {
     axios({
@@ -82,7 +85,7 @@ const DetailsPage = ({ params }: any) => {
                 />
               </svg>
 
-              <a href="#" className="hover:text-gray-400 cursor-pointer">
+              <a className="hover:text-gray-400 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -98,7 +101,14 @@ const DetailsPage = ({ params }: any) => {
                   />
                 </svg>
               </a>
-              <a href="#" className="hover:text-gray-400 cursor-pointer">
+              <a
+                onClick={() =>
+                  navigator.clipboard.writeText(
+                    `https://www.techblogging.in/${params.slug}`
+                  )
+                }
+                className="hover:text-gray-400 cursor-pointer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

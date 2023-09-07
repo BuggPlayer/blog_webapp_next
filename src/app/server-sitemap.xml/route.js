@@ -10,7 +10,7 @@ export async function GET(request) {
   // console.log("data" , data);
 
   const fields = data.map((e) => ({
-    loc: `https://localhost:3000/blog/${e["slug"]}`,
+    loc: `https://www.techblogging.in/blog/${e["slug"]}`,
     lastmod: new Date().toISOString(),
   }));
 
