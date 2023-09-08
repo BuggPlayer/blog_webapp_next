@@ -1,10 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;500;700;900&display=swap'); */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&family=Open+Sans:ital,wght@1,400;1,600;1,800&display=swap"); */
-
-/* <link href=" rel="stylesheet"> */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -28,13 +22,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background: #f88989; */
 }
 
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(156, 156, 156);
-  /* scrollbar-color: var(--secondary) var(--primary); */
 }
 
 /* Chrome, Edge, and Safari */
@@ -62,10 +54,11 @@
 .tags-wrapper::-webkit-scrollbar {
   overflow: hidden;
 }
-/* @layer components {
-  .disabled {
+
+@layer components {
+  /* .disabled {
     @apply opacity-50 cursor-not-allowed;
-  }
+  } */
   .single-article h1 {
     @apply text-3xl font-bold py-2;
   }
@@ -82,138 +75,30 @@
     @apply text-green-500 bg-gray-100 my-6 p-2;
   }
 
-  .single-article blockquote {
-    @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-primary;
+  /* .single-article p {
+    @apply text-green-500 bg-gray-100 my-6 p-2;
+  } */
+  
+  /* .single-article a {
+    @apply text-green-500 bg-gray-100 my-6 p-2;
   } */
 
-/* } */
-
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-  font-family: "Open Sans", sans-serif;
-}
-
-/* /// for nowtemporary */
-/* 
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-} */
-
-/* .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-} */
-
-/* .card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-} */
-/* 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .single-article blockquote {
+    @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-accentColor;
   }
-} */
+
+  .single-article img {
+    @apply bg-gray-100  py-2;
+  }
+
+  /* 
+  span 
+  a
+
+  
+  */
+
+  /* .single-article blockquote {
+    @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-primary;
+  } */
+}

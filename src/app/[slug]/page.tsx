@@ -38,7 +38,7 @@ const DetailsPage = ({ params }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="  bg-backgroundColor   dark:text-white   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
+      <div className=" single-article  bg-backgroundColor   dark:text-white   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
         <div className=" lg:w-[70%] md:w-[70%]  m-auto sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
           <h1 className="text-3xl font-bold py-2  ">
             {post?.title}
@@ -123,6 +123,7 @@ const DetailsPage = ({ params }: any) => {
               </a>
             </div>
           </div>
+
           <div className="text-lg text-gray-600 leading-8">
             <Image
               className="w-full my-12 mb-6"
@@ -134,7 +135,6 @@ const DetailsPage = ({ params }: any) => {
               // src={`${post.imageThumb}`}
               // alt={post.title}
             />
-            {/* <MDXRemote {...(post.content as MDXRemoteSerializeResult)} /> */}
             <div
               className="text-subHeadingTextColor text-sm  content-none	 break-words   py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}
