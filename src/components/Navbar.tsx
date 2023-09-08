@@ -4,13 +4,26 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex  font-displayHead    shadow-md  items-center justify-between px-4 p-2 h-20">
+    <nav className="flex  font-displayHead    shadow-md  items-center justify-between px-4 p-2 h-14">
       <Link href="/">
         <div className="flex items-center rounded-md cursor-pointer">
           <Image src="/logo1.png" alt="no img" height={35} width={40} />
           <span className="font-bold ml-2 ">Tech Blog</span>
         </div>
       </Link>
+
+      <ul className="flex md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
+        <li className="mr-6 font-medium text-gray-600">
+          <a href="#" className="hover:text-gray-400">
+            About us
+          </a>
+        </li>
+        <li className="mr-6 font-medium text-gray-600">
+          <a href="#" className="hover:text-gray-400">
+            Contact us
+          </a>
+        </li>
+      </ul>
 
       <ul className="flex md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
         <li className="mr-6 font-medium text-gray-600">

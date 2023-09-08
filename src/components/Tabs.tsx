@@ -14,7 +14,7 @@ const Tabs = ({ categories, paramsId }: any) => {
   };
 
   return (
-    <div className="my-6 flex items-center font-displayHead justify-between lg:flex-row md:flex-row  sm:flex-col xs:flex-col  border-b-2 border-gray-100">
+    <div className="my-2 flex items-center font-displayHead justify-between lg:flex-row md:flex-row  sm:flex-col xs:flex-col  border-b-2 border-gray-100">
       <ul className=" flex items-center">
         <li
           className={

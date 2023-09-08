@@ -13,18 +13,21 @@ const Footer = () => {
           <span className="ml-3 text-md">tech Blog</span>
         </a>
         <p className=" lg:inline-block md:inline-block min-[320px]:hidden text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 ">
-          © 2022 tech blog —
+          Copy Right © 2023 — See
+          <a href="/about" className="underline cursor-pointer">
+            Terms
+          </a>
+          and   <a href="/about" className="underline cursor-pointer">
+         Privacy
+          </a>
           <a
             // href="https://twitter.com/techsgyan"
             className="text-gray-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
-          >
-            @tech sGyan
-          </a>
+          ></a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0  mt-2 justify-center sm:justify-start">
-          
           <a className="text-gray-500">
             <svg
               fill="currentColor"
