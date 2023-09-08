@@ -71,14 +71,21 @@
     @apply text-lg font-bold py-2;
   }
 
-  .single-article pre {
-    @apply text-green-500 bg-gray-100 my-6 p-2;
+  .single-article  pre {
+    @apply text-white w-full bg-gray-200 my-6 p-2;
+  }
+  .single-article iframe  {
+    @apply w-full bg-gray-100 mr-auto my-6 p-2;
+  }
+  .single-article  img  {
+    @apply w-full mr-auto my-6 p-2;
   }
 
-  /* .single-article p {
-    @apply text-green-500 bg-gray-100 my-6 p-2;
-  } */
-  
+
+  .single-article p {
+    @apply  my-4 w-full;
+  }
+
   /* .single-article a {
     @apply text-green-500 bg-gray-100 my-6 p-2;
   } */

@@ -136,7 +136,7 @@ const DetailsPage = ({ params }: any) => {
               // alt={post.title}
             />
             <div
-              className="text-subHeadingTextColor text-sm  content-none	 break-words   py-2"
+              className="text-subHeadingTextColor text-sm  break-words   py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>
