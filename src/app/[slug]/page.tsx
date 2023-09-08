@@ -38,8 +38,8 @@ const DetailsPage = ({ params }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="  bg-backgroundColor dark:text-black   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
-        <div className=" lg:w-[70%] md:w-[70%]  sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
+      <div className="  bg-backgroundColor   dark:text-white   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
+        <div className=" lg:w-[70%] md:w-[70%]  m-auto sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
           <h1 className="text-3xl font-bold py-2  ">
             {post?.title}
             {/* hello word this is new world */}
@@ -141,7 +141,7 @@ const DetailsPage = ({ params }: any) => {
             />
           </div>
         </div>
-        <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full sticky top-0 text-center  p-3   ">
+        {/* <div className=" lg:w-[30%] md:w-[30%] sm:w-full xs:w-full sticky top-0 text-center  p-3   ">
           <div className="bg-white rounded-md p-3 ">
             <h2 className="font-bold  text-lg ">Signup to our newsletter</h2>
             <p className="mt-4 text-gray-500">
@@ -217,11 +217,11 @@ const DetailsPage = ({ params }: any) => {
             </span>
             <hr className="my-6 border-gray-100" />
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="bg-white shadow-md m-4">
+      {/* <div className="bg-white shadow-md m-4">
         <Comments />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -21,12 +21,12 @@ const ArticleList = async ({ articles }: any) => {
           </div>
         )}
       </div>
-
+      {/* 
       <div className="gap-10 flex flex-col ">
         <BlogCardWithImage text="  Get unlimited access" btn={true} />
         <BlogCardWithImage text="  We are here for you " btn={false} />
         <BlogCardWithImage text="  Get unlimited access" btn={true} />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -37,7 +37,7 @@ const Home = async () => {
             name="description"
             content="Explore the latest tech insights, tutorials, and news on our tech blog. Learn about HTML, CSS, JavaScript, React.js, and more. Stay updated with the tech world."
           />
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+      
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
