@@ -11,9 +11,6 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
 import Comments from "@/components/Comments";
 
 const DetailsPage = ({ params }: any) => {
-  console.log("====================================");
-  console.log(params);
-  console.log("====================================");
   const [post, setPost]: any = useState([]);
   useEffect(() => {
     axios({
@@ -138,8 +135,8 @@ const DetailsPage = ({ params }: any) => {
               // alt={post.title}
             />
             {/* <MDXRemote {...(post.content as MDXRemoteSerializeResult)} /> */}
-            <p
-              className="text-subHeadingTextColor   py-2"
+            <div
+              className="text-subHeadingTextColor text-sm  content-none	 break-words   py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>
