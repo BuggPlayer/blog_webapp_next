@@ -71,41 +71,18 @@
     @apply text-lg font-bold py-2;
   }
 
-  .single-article  pre {
+  .single-article pre {
     @apply text-white w-full bg-gray-200 my-6 p-2;
   }
-  .single-article iframe  {
+  .single-article iframe {
     @apply w-full bg-gray-100 mr-auto my-6 p-2;
   }
-  .single-article  img  {
-    @apply w-full mr-auto my-6 p-2;
-  }
-
 
   .single-article p {
-    @apply  my-4 w-full;
+    @apply sm:text-xs xs:text-xs break-words my-2 w-full;
   }
-
-  /* .single-article a {
-    @apply text-green-500 bg-gray-100 my-6 p-2;
-  } */
 
   .single-article blockquote {
     @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-accentColor;
   }
-
-  .single-article img {
-    @apply bg-gray-100  py-2;
-  }
-
-  /* 
-  span 
-  a
-
-  
-  */
-
-  /* .single-article blockquote {
-    @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-primary;
-  } */
 }

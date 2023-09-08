@@ -59,7 +59,7 @@ const Home = async () => {
         <h1 className="my-5 mx-1 text-2xl  ">Recent Articles</h1>
         <ArticleList articles={articleData} />
       </div>
-      <div className="bg-red-300 lg:flex md:flex sm:hidden  xs:hidden">
+      <div className=" lg:flex md:flex sm:hidden  xs:hidden">
         <Footer />
       </div>
     </main>

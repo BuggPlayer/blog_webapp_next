@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <ul className="flex md:mx-10 lg:mx-10 min-[320px]:mx-2 items-center">
+      <ul className="flex md:mx-10 lg:mx-10  sm:hidden xs:hidden items-center">
         <li className="mr-6 font-medium text-gray-600">
           <a href="#" className="hover:text-gray-400">
             About us
