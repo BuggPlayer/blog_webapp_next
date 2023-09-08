@@ -1,8 +1,10 @@
 import Head from "next/head";
+import Script from "next/script";
 import ArticleList from "@/components/ArticleList";
 import Tabs from "@/components/Tabs";
 import Navbar from "@/components/Navbar";
 import { BaseURl } from "@/utils/config";
+import Footer from "@/components/Footer";
 
 // blogs api
 const getBlogsData = async () => {
@@ -37,14 +39,28 @@ const Home = async () => {
             name="description"
             content="Explore the latest tech insights, tutorials, and news on our tech blog. Learn about HTML, CSS, JavaScript, React.js, and more. Stay updated with the tech world."
           />
-      
+
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-98BF202168"
+        />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-98BF202168');
+        `}
+        </Script>
         <Tabs categories={categoryData} />
         <h1 className="my-5 mx-1 text-2xl  ">Recent Articles</h1>
         <ArticleList articles={articleData} />
       </div>
+
+      {/* <Footer /> */}
     </main>
   );
 };
