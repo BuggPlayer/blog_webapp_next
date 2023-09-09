@@ -64,7 +64,7 @@
   }
 
   .single-article h2 {
-    @apply text-xl font-bold py-2;
+    @apply text-xl  font-bold py-2;
   }
 
   .single-article h3 {
@@ -72,14 +72,14 @@
   }
 
   .single-article pre {
-    @apply text-white w-full bg-gray-200 my-6 p-2;
+    @apply  overflow-auto w-full inline-block bg-gray-200 my-6 p-2;
   }
   .single-article iframe {
     @apply w-full bg-gray-100 mr-auto my-6 p-2;
   }
 
   .single-article p {
-    @apply sm:text-xs xs:text-xs break-words my-2 w-full;
+    @apply  break-words my-2 w-full;
   }
 
   .single-article blockquote {

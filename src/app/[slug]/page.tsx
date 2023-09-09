@@ -25,6 +25,12 @@ const DetailsPage = ({ params }: any) => {
         console.log(err);
       });
   }, []);
+
+  // const handleMouseUp = () => {
+  //   document.getSelection().toString()
+  //     ? document.getSelection().toString()
+  //     : null;
+  // };
   return (
     <>
       <Head>
@@ -136,7 +142,8 @@ const DetailsPage = ({ params }: any) => {
               // alt={post.title}
             />
             <div
-              className="text-subHeadingTextColor text-sm  break-words   py-2"
+              // onMouseUp={handleMouseUp}
+              className="text-subHeadingTextColor text-sm  break-words select-text  py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>
