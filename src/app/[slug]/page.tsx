@@ -25,12 +25,6 @@ const DetailsPage = ({ params }: any) => {
         console.log(err);
       });
   }, []);
-
-  // const handleMouseUp = () => {
-  //   document.getSelection().toString()
-  //     ? document.getSelection().toString()
-  //     : null;
-  // };
   return (
     <>
       <Head>
@@ -132,18 +126,17 @@ const DetailsPage = ({ params }: any) => {
 
           <div className="text-lg text-gray-600 leading-8">
             <Image
-              className="w-full my-12 mb-6"
+              className="w-[70%] m-auto my-6 mb-6"
               // src="/img2.jpg"
               alt="no alt"
               src="/desk.jpg"
-              height={500}
-              width={500}
+              height={300}
+              width={300}
               // src={`${post.imageThumb}`}
               // alt={post.title}
             />
             <div
-              // onMouseUp={handleMouseUp}
-              className="text-subHeadingTextColor text-sm  break-words select-text  py-2"
+              className="text-subHeadingTextColor text-sm  break-words   py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </div>
