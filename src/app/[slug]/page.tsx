@@ -25,6 +25,8 @@ const DetailsPage = ({ params }: any) => {
         console.log(err);
       });
   }, []);
+
+  let img = post?.imageThumb;
   return (
     <>
       <Head>
@@ -125,16 +127,18 @@ const DetailsPage = ({ params }: any) => {
           </div>
 
           <div className="text-lg text-gray-600 leading-8">
+
             <Image
-              className="w-[70%] m-auto my-6 mb-6"
+              // className="w-[70%] m-auto my-6 mb-6"
               // src="/img2.jpg"
               alt="no alt"
-              src="/desk.jpg"
+              // src="/desk.jpg"
               height={300}
               width={300}
-              // src={`${post.imageThumb}`}
+              src={img || "/desk.jpg"}
               // alt={post.title}
             />
+            
             <div
               className="text-subHeadingTextColor text-sm  break-words   py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}

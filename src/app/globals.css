@@ -71,18 +71,30 @@
     @apply text-lg font-bold py-2;
   }
 
-  .single-article pre {
-    @apply  overflow-auto w-full inline-block bg-gray-200 my-6 p-2;
-  }
+
   .single-article iframe {
     @apply w-full bg-gray-100 mr-auto my-6 p-2;
   }
 
   .single-article p {
-    @apply  break-words my-2 w-full;
+    @apply  break-words  my-2 w-full;
   }
 
+  .single-article img{
+    @apply p-5 mr-auto max-h-[60%] object-contain
+  }
+  
+  .single-article span {
+    @apply  break-words  my-2 w-full;
+  }
   .single-article blockquote {
     @apply my-4 p-4 border-l-4 bg-gray-100 text-gray-500 border-accentColor;
+  }
+
+  .single-article pre {
+    @apply whitespace-pre-wrap bg-[#333333] text-[white] shadow-[0_8px_17px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19)] p-2.5 rounded-[10px];
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
   }
 }

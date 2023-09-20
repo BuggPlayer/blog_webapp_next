@@ -6,7 +6,7 @@ import React from "react";
 
 const BlogCard = async ({ article }: any) => {
   // console.log("article", article);
-
+  let img = article?.imageThumb;
   return (
     <div
       className="flex my-5 rounded-md font-displayHead bg-white  shadow-md justify-between lg:flex-row md:flex-row sm:flex-row xs:flex-col-reverse   
@@ -21,7 +21,9 @@ const BlogCard = async ({ article }: any) => {
           }}
         >
           <h1 className="text-2xl md:w-[80%] sm:w-[80%] xs:w-[95%] text-headingTextColor font-bold hover:decoration-accentColor hover:underline hover:cursor-pointer">
-            {article.title}
+            {article?.title?.length > 100
+              ? `${article?.title?.substring(0, 70)}...`
+              : article?.title}
           </h1>
         </Link>
         <div className="flex items-center md:my-4  sm:my-2 xs:my-1">
@@ -35,21 +37,12 @@ const BlogCard = async ({ article }: any) => {
             />
           </div>
           <span className="text-sm font-bold font-displayHead  text-subHeadingTextColor">
-            {/* {article.attributes.author.data.attributes.firstname} */}{" "}
-            {/* {article.attributes.author.data.attributes.lastname}  */}
             Tech Blog&nbsp;
             <span className=" font-normal   text-subHeadingTextColor">
               {formatDate(article.createdAt)}
             </span>
           </span>
         </div>
-        {/* <div
-          className="text-gray-500 w-[70%]   sm:w-[90%] xs:w-[95%] break-all"
-          // dangerouslySetInnerHTML={{ __html: article?.content?.slice(0, 250) }}
-        >
-          {article?.content?.slice(0, 250)}{" "}
-          {article?.content?.length > 250 ? "..." : ""}
-        </div> */}
 
         <div className=" flex justify-between text-gray-600 gap-3 mt-4">
           <p className="border  inline-block text-sm px-2 bg-backgroundColor text-subHeadingTextColor rounded-xl ">
@@ -93,14 +86,14 @@ const BlogCard = async ({ article }: any) => {
       </div>
 
       <Image
-        src="/desk.jpg"
+        // src="/desk.jpg"
         alt=""
-        width={300}
-        height={300}
+        width={150}
+        height={100}
+        src={img || "/desk.jpg"}
         priority
-        className="
-      lg:w-70 md:w-auto  h-auto sm:w-full xs:w-full  p-2 my-2 overflow-hidden
-        "
+        objectFit="contain"
+        className=" lg:w-70 md:w-auto  h-auto sm:w-full xs:w-full  p-2 my-2 "
       />
     </div>
   );
