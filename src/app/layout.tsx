@@ -31,9 +31,10 @@ export default function RootLayout({
       <body
         className={` ${inter.className} mb-32  bg-backgroundColor text-headingTextColor
          dark:bg-gray-900 
+
          dark:selection:bg-gray-900 
           dark:text-white 
-           selection:bg-gray-50
+           selection:bg-accentColor 
            `}
       >
         <Navbar />
