@@ -9,6 +9,7 @@ import axios from "axios";
 import { BaseURl } from "@/utils/config";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote/rsc";
 import Comments from "@/components/Comments";
+import { formatDate } from "@/utils/utils";
 
 const DetailsPage = ({ params }: any) => {
   const [post, setPost]: any = useState([]);
@@ -40,11 +41,11 @@ const DetailsPage = ({ params }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className=" single-article  bg-backgroundColor   dark:text-white   mx-5 my-8  border-r-2 border-b-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
+      <div className=" single-article  bg-backgroundColor   dark:text-white   mx-5 my-8  border-r-2 lg:flex-row md:flex-row sm:flex-col xs:flex-col  flex  gap-2 ">
         <div className=" lg:w-[70%] md:w-[70%]  m-auto sm:w-full  xs:w-full bg-white   rounded-md shadow-sm p-3">
-          <h1 className="text-3xl font-bold py-2  ">
+          <h1 className="text-3xl font-bold py-2  dark:text-white  ">
             {post?.title}
-            {/* hello word this is new world */}
+
           </h1>
           <div className="flex items-center my-4 justify-between border-y-2 p-2">
             <div>
@@ -52,7 +53,6 @@ const DetailsPage = ({ params }: any) => {
                 <Image
                   src="/user-profile.png"
                   alt="no"
-                  // src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                   height={40}
                   width={40}
                 />
@@ -61,8 +61,8 @@ const DetailsPage = ({ params }: any) => {
                   buggplayer
                   {/* {article.attributes.author.data.attributes.lastname} on &nbsp; */}
                   <span className="text-gray-400 ml-1">
-                    {/* {formatDate(article.attributes.createdAt)} */}
-                    23 aug 23
+                    {formatDate(post?.createdAt)}
+                   
                   </span>
                 </span>
               </div>
@@ -127,18 +127,17 @@ const DetailsPage = ({ params }: any) => {
           </div>
 
           <div className="text-lg text-gray-600 leading-8">
-
             <Image
-              // className="w-[70%] m-auto my-6 mb-6"
+              className="w-[70%] m-auto flex my-4 mb-3"
               // src="/img2.jpg"
-              alt="no alt"
+              // alt="no alt"
               // src="/desk.jpg"
-              height={300}
-              width={300}
+              height={400}
+              width={400}
               src={img || "/desk.jpg"}
-              // alt={post.title}
+              alt={post?.title}
             />
-            
+
             <div
               className="text-subHeadingTextColor text-sm  break-words   py-2"
               dangerouslySetInnerHTML={{ __html: post.content }}
